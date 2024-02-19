@@ -25,7 +25,7 @@ class _MobileBottomSheet extends StatelessWidget {
                   showModalBottomSheet<void>(
                     context: context,
                     builder: (context) => SafeArea(
-                      child: _VideoQualitySelectorMob(
+                      child: VideoQualitySelectorMob(
                         tag: tag,
                         onTap: null,
                       ),
@@ -59,7 +59,7 @@ class _MobileBottomSheet extends StatelessWidget {
                   context: context,
                   isScrollControlled: true,
                   builder: (context) => SafeArea(
-                    child: _VideoPlaybackSelectorMob(
+                    child: VideoPlaybackSelectorMob(
                       tag: tag,
                       onTap: null,
                     ),
@@ -115,11 +115,11 @@ class _MobileBottomSheet extends StatelessWidget {
   }
 }
 
-class _VideoQualitySelectorMob extends StatelessWidget {
+class VideoQualitySelectorMob extends StatelessWidget {
   final void Function()? onTap;
   final String tag;
 
-  const _VideoQualitySelectorMob({
+  const VideoQualitySelectorMob({
     required this.onTap,
     required this.tag,
   });
@@ -147,11 +147,11 @@ class _VideoQualitySelectorMob extends StatelessWidget {
   }
 }
 
-class _VideoPlaybackSelectorMob extends StatelessWidget {
+class VideoPlaybackSelectorMob extends StatelessWidget {
   final void Function()? onTap;
   final String tag;
 
-  const _VideoPlaybackSelectorMob({
+  const VideoPlaybackSelectorMob({
     required this.onTap,
     required this.tag,
   });
