@@ -18,8 +18,7 @@ dependencies:
   universal_html: ^2.2.3
   youtube_explode_dart:
     git:
-      url: https://github.com/amol-d/youtube_explode_dart.git
-      ref: master
+      url: https://github.com/Hexer10/youtube_explode_dart
 
 
 dev_dependencies:
